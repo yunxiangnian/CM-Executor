@@ -1,0 +1,11 @@
+<configuration>
+    <appender name="metricsExecutor" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} [%X{applicationName:-}, %X{serverPort:-}] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="metricsExecutor" />
+    </root>
+</configuration>

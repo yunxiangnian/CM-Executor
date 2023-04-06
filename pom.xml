@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cloudmissing</groupId>
+    <artifactId>CM-Executor</artifactId>
+    <packaging>pom</packaging>
+    <version>${reversion}</version>
+
+    <modules>
+        <module>CMExecutor-core</module>
+        <module>CMExecutor-common</module>
+    </modules>
+
+    <properties>
+        <reversion>0.5</reversion>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <lombok.version>1.18.26</lombok.version>
+        <spring-boot.version>2.6.0</spring-boot.version>
+        <log-back.version>1.4.6</log-back.version>
+    </properties>
+
+    <dependencies>
+        <!-- spring relation -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${log-back.version}</version>
+        </dependency>
+    </dependencies>
+</project>
