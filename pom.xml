@@ -12,6 +12,7 @@
     <modules>
         <module>CMExecutor-core</module>
         <module>CMExecutor-common</module>
+        <module>CMExecutor-context</module>
     </modules>
 
     <properties>
